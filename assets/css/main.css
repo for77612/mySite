@@ -1,0 +1,113 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 1px;
+    font-family: 'Noto Sans TC', sans-serif, monospace, cursive;
+}
+
+h4 {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+
+/** nav bar **/
+
+#site-header {
+    background-color: #fce4ec;
+    color: #ff4081;
+    height: 72px;
+    min-width: 800px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+#site-header .header-logo {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 250px;
+}
+
+#site-header ul.site-header-items {
+    height: 72px;
+}
+
+#site-header ol.header-items {
+    height: 100%;
+    position: absolute;
+}
+
+#site-header ol.header-items.left-side {
+    left: 50%;
+    margin-left: -515px;
+    width: 420px;
+}
+
+#site-header ol.header-items.right-side {
+    margin-right: -410px;
+    right: 50%;
+}
+
+#site-header ol.header-items li {
+    float: left;
+    list-style: outside none none;
+    text-align: center;
+    width: 105px;
+}
+
+#site-header ol li .icon {
+    padding-top: 10px;
+}
+
+#site-header ol li .icon i.material-icons {
+    font-size: 40px;
+}
+
+
+/*.icon {
+    transition: transform 0.5s;
+}
+*/
+
+.icon:hover {
+    /*transform: rotate(75deg);*/
+    animation-duration: 1s;
+    animation-name: swing;
+    transform-origin: 50% 100% 0;
+}
+
+
+/* animate */
+
+@keyframes swing {
+    20% {
+        transform: rotate3d(0, 0, 1, 18deg);
+    }
+    40% {
+        transform: rotate3d(0, 0, 1, -13deg);
+    }
+    60% {
+        transform: rotate3d(0, 0, 1, 8deg);
+    }
+    80% {
+        transform: rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+}
